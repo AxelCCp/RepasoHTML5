@@ -1,0 +1,49 @@
+@charset "utf-8";
+/*css document */
+
+#cabeceraWeb{
+    background-color: rgb(247, 185, 53);
+    padding: 20px;
+    margin-top: 10px;
+    font:bold 20px Arial;
+    color:white;
+
+}
+
+#navPrincipal{
+    background-color:paleturquoise;
+    margin: 15px auto;
+    padding:1px;
+    font: 15px Verdana;
+    color:grey;
+    text-align: center;
+    border:1px solid whitesmoke;
+}
+
+#barraLateral{
+    background-color: aquamarine;
+    float:left;
+    height: 1282px;
+}
+
+#contenidoPrincipal{
+    background-color: ghostwhite;
+    margin-left: 210px;
+    padding-left: 15px;
+    padding-top: 1px;
+    padding-bottom: 5px;  
+}
+
+#piePrincipal{
+    background-color: lightblue;
+    clear: both;
+    margin-top: 10px;
+}
+
+
+li{
+    background-color:paleturquoise ;
+    display:inline;
+    margin-left: 8px;
+    margin-right: 8px;
+}
