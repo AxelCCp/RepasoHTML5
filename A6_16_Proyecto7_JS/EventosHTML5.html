@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //---------------------------------------------------------------------------------------------------------------------
+        
+
+        //ADD EVENT LISTENER(TIPO DE EVENTO QUE VA A DESENCADENAR EL OBJ, FUNCIÓN QUE SE VA A EJECUTAR, BOOLEAN)
+        function descBoo(){
+            alert("Boo");
+        }
+        function descGoku(){
+            alert("Goku");
+        }
+
+        function manejaImagen(){
+            for(var i=0;i<2;i++){
+                imagen[i]=document.getElementsByTagName("img")[i];
+            }
+            
+            imagen[0].addEventListener("click",descGoku,false);
+            imagen[0].addEventListener("mouseover",function(){imagen[0].width=600;imagen[0].height=600;},false);
+            imagen[0].addEventListener("mouseout",function(){imagen[0].width=564;imagen[0].height=564;},false);
+
+            imagen[0].addEventListener("click",descBoo,false);
+            imagen[1].addEventListener("mouseover",function(){imagen[1].width=600;imagen[1].height=600;},false);
+            imagen[1].addEventListener("mouseout",function(){imagen[1].width=564;imagen[1].height=564;},false);
+        }
+        window.addEventListener("load",manejaImagen,false);
+        
+        //VARIABLES----------
+        var imagen = new Array(1);
+
+        //---------------------------------------------------------------------------------------------------------------------
+    </script>
+</head>
+<body>
+    <p><img src="imagenesProyecto/gokuArale.jpg"/>&nbsp;<img src="imagenesProyecto/boo.jpg"/></p>
+    
+</body>
+</html>

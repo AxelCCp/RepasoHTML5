@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //---------------------------------------------------------------------------------------------------------------------
+        function descGoku(){
+            alert("Goku con ropa de Aralé");
+        }
+        function daDescripcion(){
+            document.getElementsByTagName("img")[0].onclick=descGoku;
+        }
+        window.onload=daDescripcion;
+        
+        //-----------------
+
+        //ADD EVENT LISTENER(TIPO DE EVENTO QUE VA A DESENCADENAR EL OBJ, FUNCIÓN QUE SE VA A EJECUTAR, BOOLEAN)
+        function descBoo(){
+            alert("Boo");
+        }
+
+        function manejaBoo(){
+            imagen=document.getElementsByTagName("img")[1];
+            imagen.addEventListener("click",descBoo,false);
+            imagen.addEventListener("mouseover",crecer,false);
+            imagen.addEventListener("mouseout",achicar,false);
+        }
+
+        function crecer(){
+            imagen.width=600;
+            imagen.height=600;
+        } 
+        function achicar(){
+            imagen.width=564;
+            imagen.height=564;
+        }
+
+        window.onload=manejaBoo;
+        
+        //VARIABLES----------
+        var imagen;
+
+        //---------------------------------------------------------------------------------------------------------------------
+    </script>
+</head>
+<body>
+    <p><img src="imagenesProyecto/gokuArale.jpg"/></p>
+    <br>
+    <p><img src="imagenesProyecto/boo.jpg"/></p>
+</body>
+</html>

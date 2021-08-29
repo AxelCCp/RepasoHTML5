@@ -1,0 +1,84 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+   }
+   table { border-collapse: collapse; border-spacing: 0; }
+   td, th, caption { font-weight: normal; text-align: left; }
+   img, fieldset { border: 0; }
+   ol { padding-left: 1.4em; list-style: decimal; }
+   ul { padding-left: 1.4em; list-style:square; }
+   q:before, q:after { content:''; }
+
+/*FIN DEL RESET CSS*/
+
+body{
+    font-size: 62.5%;   
+}
+
+h1{
+    font:normal 2.4em Verdana, Geneva, sans-serif;   
+    /*background:-o-linear-gradient(top,#00F,#0CF);*/
+    /*background:-ms-linear-gradient(top,#00F,#0CF);*/
+    background-color: aqua;
+    width:50%;
+    border-radius:10px;
+    margin:15px auto;
+    text-align: center;
+    padding: 10px;
+    color:royalblue;
+    box-shadow: blueviolet 5px 5px 0px;
+    text-shadow: blueviolet 1px 1px 1px;
+}
+
+h2{
+    font:bold 1.7em Verdana,Geneva,Sans-serif;
+    margin: 0;
+    padding: 5px 10px 7px;
+    color: black; 
+}
+
+section{
+    width: 91%;
+    border-top: 1px dashed darkorchid;
+    margin: 15px auto;
+}
+
+figure{
+    float: left;
+}
+
+figure img{
+    padding: 4px;
+    background: whitesmoke;
+    border-radius: 20px;
+    transition:transform 0.3s ease-in-out 0.1s;
+    box-shadow: gainsboro 5px 5px 10px;
+   
+}
+
+figure img:hover{
+    /*-o-transform:scale(1.2);*/
+    transform:scale(1.2);
+}
+
+figcaption{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin-top: 5px;
+}
+
+footer{
+    /*rompemos el float de la disposisión en la pantalla*/
+    clear:both;
+    padding-top: 10px;
+}
+
+
+footer p{
+    font: 1.6em Georgia, "Times New Roman", Times, serif;
+    color: cornflowerblue;
+    margin: 10px 8px;
+}
